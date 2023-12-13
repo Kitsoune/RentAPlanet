@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <title>Rent A Planet</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" media="screen" href="css/RentAPlanet.css">
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body onload="ChangerImg(sens)">
+
+    <header>
+<div class="topbanner">
+<nav>
+	<img class="SpinningPlanet" src="img\planet.gif" alt="SpinningPlanet" title="Za Warudo !" width="10%">
+        <ul>
+            <li><span onclick="transitionPages('RAPShop.html')">SHOP</span></li>
+            <li><span onclick="transitionPages('RAPContact.html')">CONTACT US</span></li>
+			<li><span onclick="transitionPages('RAPSponsors.html')">SPONSORS</span></li>
+			<h4>✨ Rent A Planet ✨ | Le meilleur site de réservation de planète.</h4>
+        </ul>
+	</nav>
+</div>
+    </header>
+
+
+<div class="bannertext">
+  <img class="bannière" src="img\bannerplanet.png" alt="Bannière" width="100%">
+  <div class="centered"><h1>Bienvenue sur Rent A Planet !</h1>
+        <h2>Le meilleur site de réservation de planète.</h2>
+  </div>
+</div><br>
+
+
+	<table id="Explications">
+		<tr>
+			<td>
+				<div class="box">
+				<h3>Notre histoire :</h3>
+				<h6>- "Rent A Planet" est une entreprise des titres de propriété de planètes créée en 2018 par M. Plaptibelucraft et Mme. Goupil 
+					(le flambeau a été repris par Warren Buffet-Campagnard). C'est une marque déposée, une compagnie axée sur l'espace, l'univers, 
+					une grande passion de ses deux fondateurs.
+				</h6>
+				</div>
+			<td>
+				<div class="box">
+				<h3>Nos objectifs :</h3>
+				<h6>- Nos objectifs sont de faire la max de moul... De satisfaire nos clients en leur offrant une expérience inégalable dans le domaine spatial,
+					ces ventes leur permettent d'obtenir un acte de propriété côté en bourse, revendable à n'importe quel moment leur profitant ! Après tout, qui n'aime pas l'argent ?
+				</h6>
+				</div>
+			<td>
+				<div class="box">
+				<h3>Nos produits :</h3>
+				<h6>- Nos produits sont des plus SPECTA-CULAIRE ! Avec un large choix de 12 planètes uniques en leur genre, sans aucune ressemblances entre elles, vous ne serez jamais déçu de votre achat !
+					Besoin d'une planète chaude ? Nous l'avons ! Une planète froide ? Nous l'avons aussi ! Alors dépensez votre argent ! 
+				</h6>
+				</div>
+	</table>
+	<br>
+	
+	<div class="BoxDiapo">
+	<div id="diaporama" onclick="ChangerImg(1)">
+		<img src="img\Blue World.png" alt="Planète Bleue" title="Clique moi !" id="img">
+	</div></div>
+	
+    <footer>
+        <p>RentAPlanet © 2022 | Tous droits réservés.</p>
+    </footer>
+	
+<?php
+date_default_timezone_set('Europe/Paris');
+$heure = date("H:i");
+echo '<h1>Bienvenue sur mon site</h1>
+      <p>Il est '.$heure.'</p>'
+?>
+
+</body>
+</html>
+
+
+                      
